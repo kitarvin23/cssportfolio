@@ -1,0 +1,78 @@
+
+  .circle {
+  width: 102%;
+  height: 100vh;
+  position: absolute;
+  right: 0px;
+  bottom: 33px;
+  }
+  
+  .circle .relaxing {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation: bubbles 4s linear infinite;
+  background: rgba(255,255,255,.5);
+  border-radius: 15px;
+  }
+  .circle .relaxing:nth-child(1) {
+  top: 20%;
+  left: 20%;
+  animation: bubbles 8s linear infinite;
+  }
+  .circle .relaxing:nth-child(2) {
+  top: 26%;
+  left: 89%;
+  animation: bubbles 10s linear infinite;
+  }
+  .circle .relaxing:nth-child(3) {
+  top: 80%;
+  left: 90%;
+  animation: bubbles 5s linear infinite;
+  }
+  .circle .relaxing:nth-child(4) {
+  top: 65%;
+  left: 75%;
+  animation: bubbles 7s linear infinite;
+  }
+  .circle .relaxing:nth-child(5) {
+  top: 90%;
+  left: 10%;
+  animation: bubbles 9s linear infinite;
+  }
+  .circle .relaxing:nth-child(6) {
+  top: 30%;
+  left: 60%;
+  animation: bubbles 5s linear infinite;
+  }
+  .circle .relaxing:nth-child(7) {
+  top: 70%;
+  left: 33%;
+  animation: bubbles 8s linear infinite;
+  }
+  .circle .relaxing:nth-child(8) {
+  top: 75%;
+  left: 60%;
+  animation: bubbles 10s linear infinite;
+  }
+  .circle .relaxing:nth-child(9) {
+  top: 23%;
+  left: 50%;
+  animation: bubbles 6s linear infinite;
+  }
+  .circle .relaxing:nth-child(10) {
+  top: 35%;
+  left: 7%;
+  animation: bubbles 10s linear infinite;
+  }
+  @keyframes bubbles {
+  0% {
+  transform: scale(0) translateY(0);
+  }
+  100% {
+  transform: scale(1.6) translateY(-250px);
+  }
+  }
+  

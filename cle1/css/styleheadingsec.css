@@ -1,0 +1,140 @@
+
+  .bgcss {
+    position: relative;
+    min-height: 100vh;
+    opacity: 20%;
+    background-color: gray;
+    bottom: 730px;   
+  display: flex;
+  }
+  .stripes.diagonal {
+    background-image: linear-gradient(45deg, transparent 20%, black 25%, transparent 25%), 
+    linear-gradient(-45deg, transparent 20%, black 25%, transparent 25%), 
+    linear-gradient(-45deg, transparent 75%, black 80%, transparent 0),
+    radial-gradient(gray 2px, transparent 0);
+  background-size: 50px 50px, 30px 30px;
+  }
+
+  @font-face {
+    font-family: soredona;
+    src: url(fonts/wew.ttf);
+  }
+  @font-face {
+    font-family:quickers;
+    src: url(fonts/quickers.ttf);
+  }
+
+  
+.yoyo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: -1280px;
+  min-height: 100vh;
+
+  font-family: soredona;
+}
+
+
+/* block-$ */
+.block-effect {
+  font-size: calc(8px + 6vw);
+}
+
+.block-reveal {
+  --t: calc(var(--td) + var(--d));
+
+  color: transparent;
+  padding: 4px;
+
+  position: relative;
+  overflow: hidden;
+
+  animation: revealBlock 0s var(--t) forwards;
+}
+
+.block-reveal::after {
+  content: '';
+
+  width: 0%;
+  height: 100%;
+  padding-bottom: 4px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background: var(--bc);
+  animation: revealingIn var(--td) var(--d) forwards, revealingOut var(--td) var(--t) forwards;
+}
+.block-reveal2 {
+    --t: calc(var(--td) + var(--d));
+  
+    color: transparent;
+    padding: 4px;
+  
+    position: relative;
+    overflow: hidden;
+  
+    animation: revealBlock2 5s var(--t) forwards;
+  }
+  
+  .block-reveal2::after {
+    content: '';
+  
+    width: 0%;
+    height: 100%;
+    padding-bottom: 4px;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    background: var(--bc);
+    animation: revealingIn2 var(--td) var(--d) forwards, revealingOut2 var(--td) var(--t) forwards;
+  }
+
+/* animations */
+@keyframes revealBlock {
+  100% {
+    color: #0f0f0f;
+  }
+}
+@keyframes revealingIn {
+  100% {
+    width: 100%;
+  }
+}
+@keyframes revealingOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(101%);
+  }
+}
+/* animations2 */
+@keyframes revealBlock2 {
+    100% {
+      color: #000000;
+    }
+  }
+  
+  @keyframes revealingIn2 {
+
+    100% {
+        width: 100%;
+      }
+ 
+    }
+  
+  @keyframes revealingOut2 {
+  
+    100% {
+      transform: translateX(101%);
+    }
+  
+  }
+

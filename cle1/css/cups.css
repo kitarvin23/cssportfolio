@@ -1,0 +1,341 @@
+  /* first Cup */
+#containercup1{
+   position: absolute;
+   bottom: -75%;
+   left: 17%;
+  }
+    /* background */
+  #bgcup{
+    width: 300px;
+    height: 300px;
+    border: 2px solid #252C32;
+    position: relative;
+    border-radius: 10px;  
+    background-image: linear-gradient(45deg, transparent 20%, gray 25%, transparent 25%), 
+    linear-gradient(-45deg, transparent 20%, gray 25%, transparent 25%), 
+    linear-gradient(-45deg, transparent 75%, gray 80%, transparent 0),
+    radial-gradient(gray 2px, transparent 0);
+    background-size: 30px 30px, 30px 30px;
+    opacity: 15%;
+  }
+  .cup-long {
+    position: absolute;
+    width: 100px;
+    height: 110px;
+    background: #252C32;
+    border: 2px solid #F4E8DA;
+    border-radius: 10% 10% 50% 50%;
+    }
+  .latte {
+    position: absolute;
+    top: 35%;
+    left:32%;
+    margin: auto;
+    background: linear-gradient(to bottom, #252C32 5%, #d6d6d6 5%, #d6d6d6 30%, #b3b3b3 30%, #b3b3b3 70%, #5f5f5f 70%);  
+    box-shadow: 2px 2px 2px 2px #aaa8a8;
+    
+  }
+  .handle {
+    position: absolute;
+    height: 30px;
+    width: 25px;
+    background: transparent;
+    border-radius: 50% 30%;
+    left: 95%;
+    top: 10%;
+    z-index: -1;
+    border: 2px solid #F4E8DA;
+    box-shadow: 2px 2px 2px 2px #aaa8a8;
+  }
+  
+  .steam {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(165, 165, 165);
+    border-radius: 50%;
+    margin-left: 40px;
+    margin-top: -40px;
+    bottom: 160px;
+    left: 100px;
+  }
+  .steam-one {
+    animation: steam-one 4s ease-out infinite;
+  }
+  .steam-three {
+    animation: steam-one 4s ease-out 1s infinite;
+  }
+  @keyframes steam-one {
+    0% {
+          transform: translateY(0) translateX(0) scale(0.25);
+          opacity: 0.25;
+    }
+    100% {
+          transform: translateY(-100px) translateX(10px) scale(1);
+          opacity: 0;
+    }
+  }    
+  .steam-two {
+    animation: steam-two 4s ease-out 0.5s infinite;
+  }
+  .steam-four {
+    animation: steam-two 4s ease-out 1.5s infinite;
+  }
+  @keyframes steam-two {
+    0% {
+          transform: translateY(0) translateX(0) scale(0.25);
+          opacity: 0.25;
+    }
+    100% {
+          transform: translateY(-100px) translateX(-10px) scale(1);
+          opacity: 0;
+    }
+  } 
+
+  /* Second Cup */
+
+  
+.containercup2 {
+     position: absolute;
+   bottom: -125%;
+   right: 17%;
+   
+  }
+  .bgcup2{
+    width: 300px;
+    height: 300px;
+    border: 2px solid #252C32;
+    position: relative;
+    border-radius: 10px;  
+    background-size: 30px 30px, 30px 30px;
+    opacity: 15%;
+    background-color: gray;
+  }
+  
+  .coffee-icon {
+    width: 172px;
+    position: relative;
+    top: 236px;
+    left: 26%;
+    right: 0%;
+  }
+  .coffee-icon-2 {
+    height: 174px;
+  }
+  .coffee-icon-2 .coffee-cup {
+    width: 133px;
+    height: 122px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    
+  }
+  .coffee-icon-2 .coffee-cup:before {
+    content: "";
+    display: block;
+    width: 103px;
+    position: absolute;
+    left: 0px;
+    bottom: 21px;
+    height: 0px;
+    border-bottom: 98px solid #e0dfdd; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    transform: rotate(180deg);
+    z-index: 2;
+    
+  }
+  .coffee-icon-2 .coffee-cup:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 15px;
+    bottom: 0px;
+    height: 21px;
+    width: 103px;
+    background-color: #858585;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 2px 2px 2px 2px #aaa8a8;
+  }
+  .coffee-icon-2 .coffee-cup .cup-lifter {
+    width: 55px;
+    height: 35px;
+    position: absolute;
+    top: 35px;
+    right: -23px;
+    border-top: 10px solid #000000;
+    border-left: 10px solid #e0dfdd;
+    border-radius: 50%;
+    transform: rotate(120deg);
+  }
+  .coffee-icon-2 .coffee-cup .coffee {
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    width: 110px;
+    height: 0px;
+    border-bottom: 25px solid #252C32;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    transform: rotate(180deg);
+    z-index: 4;
+  }
+  .coffee-icon-2 .coffee-cup .coffee:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -35px;
+    left: 0px;
+    height: 0px;
+    width: 85px;
+    border-bottom: 35px solid #a8a3a3;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+  }
+  .coffee-icon-2 .coffee-cup .coffee:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -60px;
+    left: 6px;
+    height: 0px;
+    width: 73px;
+    border-bottom: 25px solid #5f5f5f;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+  }
+  .coffee-icon-2 .cream {
+    position: absolute;
+    top: -55px;
+    left: 0;
+    right: 0;
+    height: 55px;
+    width: 111px;
+    margin: auto;
+    z-index: 1;
+  }
+  .coffee-icon-2 .cream .cream-part-1 {
+    width: 100%;
+    height: 38px;
+    border-radius: 40px;
+    background-color: #fff;
+    position: absolute;
+    top: 37px;
+    left: 0;
+  }
+  .coffee-icon-2 .cream .cream-part-2 {
+    height: 38px;
+    width: 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .coffee-icon-2 .cream .cream-part-2:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    background-color: #fff;
+    width: 70%;
+    height: 50px;
+    border-radius: 20px;
+  }
+  .coffee-icon-2 .cream .cream-part-2:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    background-color: #fff;
+    width: 80%;
+    height: 60px;
+    border-radius: 40px;
+  }
+  @keyframes milk-animation {
+    0% {
+      transform: rotate(-171deg);
+    }
+    100% {
+      transform: rotate(-165deg);
+    }
+  }
+  .coffee-icon-2 .cream .cream-part-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 44px;
+    border-left: 21px solid #fff;
+    height: 150px;
+    border-radius: 50%;
+    transform: rotate(-171deg);
+    animation: milk-animation 0.9s linear 0s infinite alternate;
+  }
+  @keyframes choco-animation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .coffee-icon-2 .cream .choco {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .coffee-icon-2 .cream .choco .choco-item {
+    width: 4px;
+    height: 4px;
+    background-color: #49362F;
+    border-radius: 50%;
+    animation: choco-animation 0.9s linear infinite alternate;
+  }
+  .coffee-icon-2 .cream .choco .choco-item-1 {
+    position: absolute;
+    top: 19px;
+    left: 42px;
+    animation-delay: 0.1s;
+  }
+  .coffee-icon-2 .cream .choco .choco-item-2 {
+    position: absolute;
+    top: 27px;
+    left: 32px;
+    animation-delay: 0.4s;
+  }
+  .coffee-icon-2 .cream .choco .choco-item-3 {
+    position: absolute;
+    top: 35px;
+    left: 43px;
+    animation-delay: 0.8s;
+  }
+  .coffee-icon-2 .cream .choco .choco-item-4 {
+    position: absolute;
+    top: 40px;
+    left: 24px;
+    animation-delay: 1.2s;
+  }
+  .coffee-icon-2 .cream .choco .choco-item-5 {
+    position: absolute;
+    top: 47px;
+    left: 34px;
+    animation-delay: 1.6s;
+  }
+  .coffee-icon-2 .cream .choco .choco-item-6 {
+    position: absolute;
+    top: 51px;
+    left: 12px;
+    animation-delay: 2s;
+  }
+  .coffee-icon-2 .cream .choco .choco-item-7 {
+    position: absolute;
+    top: 51px;
+    left: 50px;
+    animation-delay: 2.4s;
+  }
+
+  

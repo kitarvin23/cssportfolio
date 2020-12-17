@@ -1,0 +1,135 @@
+/* instagram */
+.insta-footer{
+  position: relative;
+ top: 318.5px;
+ right: -35%;
+}
+.insta{
+  background: 
+  -webkit-linear-gradient(bottom left, #000000 0%, #000000 50%, #000000 100%);
+  width: 40px;
+  height: 40px;
+  border-radius: 25%;
+}
+
+.shape{
+  transform: translate(7%, 7%);
+  width: 35px;
+  height:  35px;
+  border-radius: 25%;
+  box-shadow: 0px 0px 0px 1px rgb(255, 255, 255);
+}
+
+.shape::before{
+  content: '';
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  margin-top: 6px;
+  margin-left: 28px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+}
+
+.shape::after{
+  position: absolute;
+  content: '';
+  margin-top: 7.5px;
+  margin-left: 7.5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 1px rgb(255, 255, 255);
+}
+
+
+/* FACEBOOK */
+.fb-footer{
+  position: relative;
+  top: 258px;
+  right: -46.5%;
+}
+.fb {
+  list-style:none;
+  padding:0;
+  margin:0;
+  font:0.875em/1 Arial, sans-serif;
+}
+
+.fb .fbpos {
+  float:left;
+  width:66px;
+  height:66px;
+  margin:20px 20px 0 0;
+}
+
+.fb .fbpos .fbanchor {
+  display:block;
+  width:40px;
+  height:40px;
+  overflow:hidden;
+  border:1px solid transparent;
+  line-height:40px;
+  text-decoration:none;
+  border-radius:5px; 
+}
+
+.facebook .fbanchor {
+  position:relative;
+  border-color:#3c5a98;
+  text-transform:lowercase;
+  text-indent:14px;
+  letter-spacing:10px;
+  font-weight:bold;
+  font-size:40px;
+  line-height:46px;
+  color:#fff;
+  background:#000000;
+}
+
+/* TWITTER */
+.tw-footer{
+  position: absolute;
+  top: 648px;
+  right: 620.5px;
+}
+.tw {
+    list-style:none;
+    padding:0;
+    margin:0;
+    font:0.875em/1 Arial, sans-serif;
+}
+.tw .twpos {
+    float:left;
+    width:66px;
+    height:66px;
+    margin:20px 20px 0 0;
+}
+.tw .twpos .twanchor {
+    display:block;
+    width:40px;
+    height:40px;
+    overflow:hidden;
+    border:1px solid transparent;
+    line-height:37px; /* Adjust pa taas pa dalum sang text */
+    text-decoration:none;
+    text-shadow:0 -1px 0 rgba(0,0,0,0.5);
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px; 
+}
+.twitter .twanchor {
+    position:relative;
+    text-transform:lowercase;
+    text-indent:12px; /* Adjust pa pa left/right sang text */
+    letter-spacing:40px;
+    font:bold 40px Tahoma, sans-serif;
+    line-height:40px;
+    color:rgb(255, 255, 255);
+    background:#000000;
+    -moz-box-shadow:0 0 4px rgba(0,0,0,0.4);
+    -webkit-box-shadow:0 0 4px rgba(0,0,0,0.4);
+    box-shadow:0 0 4px rgba(0,0,0,0.4); 
+    background: black;
+}
+
